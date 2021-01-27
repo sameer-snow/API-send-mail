@@ -18,6 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::prefix('v1')->group(function(){
-	Route::post('send-mail', 'Api\SendBulkMailController@sendBulkMail');
-	Route::get('mail-list', 'Api\SendBulkMailController@getMailList');
+	Route::post('send-mail', 'API\SendBulkMailController@sendBulkMail');
+	Route::get('mail-list', 'API\SendBulkMailController@getMailList');
 });

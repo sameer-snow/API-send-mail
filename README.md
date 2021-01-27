@@ -13,6 +13,8 @@ Please check the official laravel installation guide for server requirements bef
 Clone the repository
 
     git clone git@github.com:sameer-snow/API-send-mail.git
+    OR
+    (Manual) Download Source zip and extract into htdocs/API-send-mail OR www/API-send-mail
 
 Switch to the repo folder
 
@@ -21,6 +23,8 @@ Switch to the repo folder
 Install all the dependencies using composer
 
     composer install
+    OR
+    composer install --ignore-platform-reqs (for windows use this - dependencies not work without PHP ext-pcntl)
 
 If .env file not exist then Copy the example env file and make the required configuration changes in the .env file
 
@@ -51,9 +55,9 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone git@github.com:sameer-snow/API-send-mail.git
+    git clone git@github.com:sameer-snow/API-send-mail.git (Skip this step in the case of manually extracted the source code)
     cd API-send-mail
-    composer install
+    composer install OR composer install --ignore-platform-reqs (for windows use this - dependencies not work without PHP ext-pcntl)
     cp .env.example .env
     php artisan key:generate 
     
@@ -73,10 +77,17 @@ This application adheres to the api specifications set by the Samir (https://git
 
 # Code overview
 
-## Dependencies
+## Dependencies (Note: Not working for the windows)
 
 - [predis](https://github.com/predis/predis)
 - [laravel-horizon](https://github.com/laravel/horizon)
+
+## Environment variables
+
+- `.env` - Environment variables can be set in this file
+- Update QUEUE_CONNECTION=redis
+- Add REDIS_CLIENT=predis
+- While successfully work redis queue you have to run `php artisan queue:work` command in order to execute the queue
 
 ## Folders
 
@@ -89,10 +100,6 @@ This application adheres to the api specifications set by the Samir (https://git
 - `database/seeds` - Contains the database seeder
 - `routes` - Contains all the api routes defined in api.php file
 - `public/attachments` - Contains all the mail attachments
-
-## Environment variables
-
-- `.env` - Environment variables can be set in this file
 
 ***Note*** : You can quickly set the database information and other variables in this file and have the application fully working.
 
