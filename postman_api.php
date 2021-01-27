@@ -11,8 +11,8 @@ Content-Length: 1407252
   "subject": "Email Sent via API",
   "body": "This is the API body message sent",
   "email": [
-      "s4samirpatel@gmail.com",
-      "patel.samir.ce@gmail.com"
+      "email@gmail.com",
+      "email1@gmail.com"
   ],
   "attachments": [
       {

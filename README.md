@@ -38,13 +38,13 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
 
-Configure the mailer, I set mailtrap SMTP settings
+Configure the mailer, you can set mailtrap, GMAIL or other SMTP settings
 
 	MAIL_MAILER=smtp
 	MAIL_HOST=smtp.mailtrap.io
 	MAIL_PORT=2525
-	MAIL_USERNAME=c76163ec1ccfef (set mailtrap username)
-	MAIL_PASSWORD=2f29c5280973fd (set mailtrap password)
+	MAIL_USERNAME=c74363os0ccfef (set mailtrap username)
+	MAIL_PASSWORD=2s29q588o973fd (set mailtrap password)
 	MAIL_ENCRYPTION=tls
 
 Start the local development server
