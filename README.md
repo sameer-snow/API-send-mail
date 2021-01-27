@@ -67,7 +67,7 @@ The api can be accessed at [http://localhost:8000/api/v1](http://localhost:8000/
 ## API Specification
 
 This application adheres to the api specifications set by the Samir (https://github.com/sameer-snow).
-> [Full API Spec](https://github.com/sameer-snow/API-send-mail/postman_api.php)
+> [Full API Spec](https://github.com/sameer-snow/API-send-mail/blob/master/postman_api.php)
 
 ----------
 
@@ -115,7 +115,7 @@ Request headers
 | Yes      	| Content-Type     	| application/json 	|
 | Yes      	| X-Requested-With 	| XMLHttpRequest   	|
 
-Refer the [api specification](https://github.com/sameer-snow/API-send-mail/postman_api.php) for more info.
+Refer the [api specification](https://github.com/sameer-snow/API-send-mail/blob/master/postman_api.php) for more info.
 
 ----------
 
